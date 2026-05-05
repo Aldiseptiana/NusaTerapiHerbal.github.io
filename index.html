@@ -58,20 +58,6 @@ margin: 0 auto;
 padding: 0 24px;
 }
 
-/* Navbar / Logo Area */
-.navbar {
-padding: 20px 0;
-background: var(--white);
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.logo-img {
-height: 60px; /* Sesuaikan tinggi logo kamu */
-width: auto;
-}
-
 section {
 padding: 60px 0;
 }
@@ -103,7 +89,7 @@ transform: translateY(-2px);
 /* Hero Section */
 .hero {
 background: linear-gradient(135deg, var(--secondary-color) 0%, #ffffff 100%);
-padding-top: 40px;
+padding-top: 80px;
 padding-bottom: 40px;
 text-align: center;
 }
@@ -219,7 +205,7 @@ font-size: 0.9rem;
 margin-bottom: 20px;
 }
 
-/* Sticky Button */
+/* Sticky Button dengan Animasi Gerak */
 .sticky-btn {
 position: fixed;
 bottom: 20px;
@@ -234,7 +220,6 @@ animation: pulse-sticky 1.5s infinite ease-in-out;
 }
 
 @media (min-width: 768px) {
-.navbar { justify-content: flex-start; padding-left: 24px; }
 .hero h1 { font-size: 3.5rem; }
 .card-grid { grid-template-columns: repeat(3, 1fr); }
 .testimonial-grid { grid-template-columns: repeat(2, 1fr); }
@@ -255,12 +240,6 @@ gap: 40px;
 </head>
 <body>
 
-<!-- Area Logo -->
-<nav class="navbar container">
-    <!-- Placeholder Logo: Ganti URL di bawah dengan link file logo NusaTerapi kamu -->
-    <img src="https://via.placeholder.com/200x80/0d9488/ffffff?text=NUSA+TERAPI" alt="Logo Nusa Terapi" class="logo-img">
-</nav>
-
 <!-- Hero Section -->
 <header class="hero">
 <div class="container">
@@ -277,7 +256,32 @@ gap: 40px;
 </div>
 </header>
 
-<!-- Sisanya sama seperti kodingan sebelumnya... -->
+<!-- Problem Section -->
+<section class="problem">
+<div class="container">
+<h2 class="text-center">Apakah Anda Merasakan Ini?</h2>
+<div class="card-grid">
+<div class="card">
+<div class="problem-item">
+<span>📱</span>
+<p>Mata terasa sangat lelah dan tegang setelah seharian menatap gadget atau laptop.</p>
+</div>
+</div>
+<div class="card">
+<div class="problem-item">
+<span>🔥</span>
+<p>Mata sering merah, gatal, berair, atau terasa mengganjal (seperti ada pasir).</p>
+</div>
+</div>
+<div class="card">
+<div class="problem-item">
+<span>🌫️</span>
+<p>Penglihatan mulai kabur atau buram secara perlahan dan sulit fokus.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
 
 <!-- Testimonials Section -->
 <section style="background-color: #fafafa;">
@@ -291,7 +295,6 @@ gap: 40px;
 </div>
 <p>“Mata jadi lebih jernih setelah terapi. Pekerjaan kantor jadi lebih nyaman.”</p>
 </div>
-<!-- Testimoni lainnya tetap ada di sini... -->
 <div class="testi-card">
 <div class="testi-profile">
 <div class="avatar">S</div>
@@ -306,6 +309,27 @@ gap: 40px;
 </div>
 <p>“Mata merah karena polusi motor langsung hilang. Langganan di sini pokoknya.”</p>
 </div>
+<div class="testi-card">
+<div class="testi-profile">
+<div class="avatar">R</div>
+<div><strong>Rian, Bandung</strong></div>
+</div>
+<p>“Buat yang sering di depan laptop wajib coba. Pandangan jadi tajam lagi.”</p>
+</div>
+<div class="testi-card">
+<div class="testi-profile">
+<div class="avatar">D</div>
+<div><strong>Dewi, Cimahi</strong></div>
+</div>
+<p>“Pelayanannya ramah, tempatnya bersih. Hasilnya langsung kerasa sekali terapi.”</p>
+</div>
+<div class="testi-card">
+<div class="testi-profile">
+<div class="avatar">H</div>
+<div><strong>Hendra, Bandung</strong></div>
+</div>
+<p>“Pusing karena mata lelah langsung hilang. Sangat direkomendasikan!”</p>
+</div>
 </div>
 </div>
 </section>
@@ -317,6 +341,7 @@ gap: 40px;
 <p>Ambil kesempatan untuk mata sehat sekarang</p>
 <span class="price-old">Rp150.000</span>
 <span class="price-new">Rp50.000</span>
+<!-- Tombol Promo Bergerak -->
 <a href="https://wa.me/6289646836064?text=Halo%20Kang%20Aldi%2C%20saya%20mau%20booking%20Terapi%20Gurah%20Mata%20promo%2050rb.%20Jadwal%20yang%20kosong%20kapan%20ya%3F" class="btn btn-animate" style="background-color: white; color: var(--primary-color);">Booking Sekarang via WhatsApp</a>
 </div>
 </section>
@@ -326,7 +351,7 @@ gap: 40px;
 <p>&copy; 2026 Nusa Terapi Herbal - Aldi Septiana. All rights reserved.</p>
 </footer>
 
-<!-- Sticky Button -->
+<!-- Sticky Button Mobile dengan Animasi -->
 <a href="https://wa.me/6289646836064?text=Halo%20Kang%20Aldi%2C%20saya%20mau%20booking%20Terapi%20Gurah%20Mata%20promo%2050rb.%20Jadwal%20yang%20kosong%20kapan%20ya%3F" class="btn sticky-btn">
 💬 Konsultasi Gratis Sekarang
 </a>
