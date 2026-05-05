@@ -3,127 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NusaTerapi - Spesialis Gurah Mata</title>
+    <title>NusaTerapi - Ahli Gurah Mata Herbal</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        /* Dasar & Warna Herbal */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
         body { background-color: #f4f9f4; color: #2d3436; line-height: 1.6; }
         .container { max-width: 600px; margin: 0 auto; padding: 20px; }
 
-        /* Header Putih Hijau */
         header { 
-            text-align: center; 
-            padding: 40px 20px; 
-            background: #ffffff;
-            border-bottom: 4px solid #27ae60;
-            border-radius: 0 0 40px 40px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center; padding: 40px 20px; background: #ffffff;
+            border-bottom: 5px solid #27ae60; border-radius: 0 0 50px 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
         }
-        .logo-area { display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
-        .logo-icon { 
-            background: #27ae60; /* Hijau Herbal */
-            color: #ffffff; 
-            width: 50px; 
-            height: 50px; 
-            border-radius: 12px; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            font-size: 1.8rem;
-            margin-right: 15px;
+        .logo-box {
+            width: 70px; height: 70px; background: #27ae60;
+            border-radius: 50%; display: flex; align-items: center;
+            justify-content: center; margin: 0 auto 15px;
+            color: white; font-size: 2rem; box-shadow: 0 5px 15px rgba(39, 174, 96, 0.3);
         }
-        h1 { color: #27ae60; font-size: 2rem; letter-spacing: 1px; text-transform: uppercase; font-weight: 800; }
-        .tagline { color: #666; font-size: 0.9rem; font-weight: 500; }
+        h1 { color: #27ae60; font-size: 2.2rem; text-transform: uppercase; font-weight: 900; }
+        .tagline { color: #666; font-size: 1rem; margin-top: 5px; font-weight: 500; }
 
-        /* Hero Section (Masalah) */
-        .hero { background: #ffffff; padding: 25px; border-radius: 20px; margin: 20px 0; border: 1px solid #e0e0e0; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
-        .question { color: #2c3e50; font-size: 1.3rem; font-weight: bold; margin-bottom: 15px; display: block; border-bottom: 2px solid #27ae60; padding-bottom: 5px; display: inline-block; }
-        .problem-item { display: flex; align-items: center; margin-bottom: 10px; font-size: 1rem; color: #444; }
-        .problem-item i { color: #e74c3c; margin-right: 12px; font-size: 1rem; }
+        .hero { background: #ffffff; padding: 30px; border-radius: 30px; margin: 25px 0; border: 1px solid #e8f5e9; }
+        .intro-title { color: #2c3e50; font-size: 1.5rem; font-weight: 800; margin-bottom: 20px; text-align: center; line-height: 1.3; }
+        .problem-item { display: flex; align-items: center; margin-bottom: 12px; background: #fff5f5; padding: 12px; border-radius: 15px; border-left: 4px solid #e74c3c; font-weight: 500; }
+        .problem-item i { color: #e74c3c; margin-right: 15px; }
 
-        /* Gambar Terapi */
-        .main-image { 
-            width: 100%; 
-            border-radius: 20px; 
-            border: 4px solid #ffffff; 
-            margin-bottom: 25px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
+        .img-container { width: 100%; border-radius: 25px; overflow: hidden; margin-bottom: 25px; border: 5px solid white; box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+        .img-container img { width: 100%; display: block; }
 
-        /* Manfaat Box */
-        .benefit-box { background: #27ae60; color: #ffffff; padding: 25px; border-radius: 20px; }
-        h2 { color: #ffffff; font-size: 1.4rem; margin-bottom: 15px; text-align: center; }
-        .benefit-list { list-style: none; }
-        .benefit-list li { margin-bottom: 12px; display: flex; align-items: flex-start; }
-        .benefit-list li i { color: #f1c40f; margin-right: 12px; margin-top: 5px; } /* Ikon Emas */
+        .benefit-card { background: #27ae60; color: white; padding: 30px; border-radius: 30px; margin-bottom: 30px; }
+        .check-item { display: flex; align-items: center; margin-bottom: 15px; font-size: 1.1rem; }
+        .check-item i { color: #f1c40f; margin-right: 15px; }
 
-        /* Tombol WA */
+        .testi-section { margin-top: 40px; }
+        .testi-title { text-align: center; color: #27ae60; margin-bottom: 25px; font-weight: 800; font-size: 1.6rem; }
+        .testi-card { background: white; padding: 20px; border-radius: 20px; margin-bottom: 15px; border: 1px solid #eee; box-shadow: 0 5px 15px rgba(0,0,0,0.02); }
+        .stars { color: #f1c40f; margin-bottom: 8px; }
+        .testi-user { font-weight: bold; font-size: 0.9rem; color: #27ae60; margin-top: 10px; display: block; }
+
         .btn-wa { 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            background: #2ecc71; 
-            color: #fff; 
-            text-decoration: none; 
-            padding: 18px; 
-            border-radius: 50px; 
-            font-weight: bold; 
-            font-size: 1.1rem;
-            margin-top: 30px;
-            transition: 0.3s;
-            box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
+            display: flex; align-items: center; justify-content: center;
+            background: #2ecc71; color: #fff; text-decoration: none;
+            padding: 22px; border-radius: 50px; font-weight: 900;
+            font-size: 1.2rem; margin-top: 25px; transition: 0.3s;
+            box-shadow: 0 10px 25px rgba(46, 204, 113, 0.4); text-align: center;
         }
-        .btn-wa:hover { transform: translateY(-3px); background: #27ae60; }
-        .btn-wa i { font-size: 1.6rem; margin-right: 10px; }
+        .btn-wa:hover { transform: translateY(-5px); }
 
-        footer { text-align: center; padding: 40px 0; color: #7f8c8d; font-size: 0.85rem; }
+        footer { text-align: center; padding: 50px 0; color: #95a5a6; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="logo-area">
-        <div class="logo-icon"><i class="fas fa-leaf"></i></div>
-        <h1>NusaTerapi</h1>
-    </div>
-    <p class="tagline">Spesialis Gurah Mata & Herbal Tradisional</p>
+    <div class="logo-box"><i class="fas fa-eye"></i></div>
+    <h1>NusaTerapi</h1>
+    <p class="tagline">Ahli Gurah Mata & Pengobatan Herbal</p>
 </header>
 
 <div class="container">
     <div class="hero">
-        <span class="question">Punya keluhan sama mata?</span>
-        <div class="problem-item"><i class="fas fa-exclamation-circle"></i> Sering merasa perih atau panas?</div>
-        <div class="problem-item"><i class="fas fa-exclamation-circle"></i> Mata sering berair atau gatal?</div>
-        <div class="problem-item"><i class="fas fa-exclamation-circle"></i> Terasa lelah karena radiasi HP/Laptop?</div>
-        <div class="problem-item"><i class="fas fa-exclamation-circle"></i> Pandangan mulai buram & tidak jernih?</div>
+        <h2 class="intro-title">Punya Keluhan Mata Minus, Plus, Silindris? Atau Mata Sering Perih, Berair, & Penglihatan Mulai Buram?</h2>
+        <div class="problem-list">
+            <div class="problem-item"><i class="fas fa-times-circle"></i> Mata Minus / Plus / Silindris</div>
+            <div class="problem-item"><i class="fas fa-times-circle"></i> Sering Perih, Gatal, & Merah</div>
+            <div class="problem-item"><i class="fas fa-times-circle"></i> Mata Berair & Cepat Lelah (Radiasi HP)</div>
+            <div class="problem-item"><i class="fas fa-times-circle"></i> Katarak Dini / Lemak Mata (Pterygium)</div>
+        </div>
+        <p style="text-align: center; font-weight: 700; color: #27ae60; font-size: 1.1rem;">Kembalikan Pandangan Jernih Anda Sekarang!</p>
     </div>
 
-    <!-- Gambar Terapi (Hijau Alami) -->
-    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecee?auto=format&fit=crop&w=800&q=80" class="main-image" alt="Terapi Alami">
-
-    <div class="benefit-box">
-        <h2>Solusi Alami NusaTerapi</h2>
-        <ul class="benefit-list">
-            <li><i class="fas fa-star"></i> Membersihkan kotoran mata secara tuntas.</li>
-            <li><i class="fas fa-star"></i> Ramuan herbal rahasia alami & aman.</li>
-            <li><i class="fas fa-star"></i> Relaksasi saraf mata yang tegang.</li>
-            <li><i class="fas fa-star"></i> Penglihatan terasa lebih ringan & terang.</li>
-        </ul>
+    <div class="img-container">
+        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80" alt="Terapi Mata Herbal">
     </div>
 
-    <p style="text-align: center; margin-top: 25px; color: #7f8c8d; font-weight: 500;">
-        Melayani panggilan ke rumah untuk wilayah <br><strong>Bandung & Cimahi</strong>.
-    </p>
+    <div class="benefit-card">
+        <h2 style="text-align: center; margin-bottom: 20px;">Keunggulan NusaTerapi</h2>
+        <div class="check-item"><i class="fas fa-leaf"></i> Ramuan Herbal 100% Alami & Higienis</div>
+        <div class="check-item"><i class="fas fa-leaf"></i> Tanpa Operasi & Tanpa Bahan Kimia</div>
+        <div class="check-item"><i class="fas fa-leaf"></i> Melancarkan Sirkulasi Darah Area Mata</div>
+        <div class="check-item"><i class="fas fa-leaf"></i> Efek Langsung Terasa Segar & Terang</div>
+    </div>
 
-    
-    <a href="https://wa.me/6289646836064?text=Halo%20NusaTerapi,%20saya%20mau%20konsultasi%20tentang%20layanan%20Gurah%20Mata" class="btn-wa">
-        <i class="fab fa-whatsapp"></i> KONSULTASI SEKARANG (GRATIS)
+    <div class="testi-section">
+        <h2 class="testi-title">Kisah Sukses Pasien Kami</h2>
+        
+        <div class="testi-card">
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Mata silindris saya sering bikin pusing kalau kerja depan laptop. Rutin gurah di NusaTerapi, sekarang pandangan jauh lebih fokus dan nggak gampang capek!"</p>
+            <span class="testi-user">- Kang Yusuf (Supir Logistik - Bandung)</span>
+        </div>
+
+        <div class="testi-card">
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Awalnya mata sering berair dan merah, dikira sakit biasa. Ternyata banyak kotoran keluar pas digurah. Langsung enteng banget, sejuk!"</p>
+            <span class="testi-user">- Bu Ratna (Cimahi)</span>
+        </div>
+
+        <div class="testi-card">
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Mata minus anak saya pelan-pelan membaik setelah terapi di sini. Ramuannya alami jadi saya nggak khawatir. Pelayanan panggilannya sangat membantu."</p>
+            <span class="testi-user">- Pak Heru (Kopo, Bandung)</span>
+        </div>
+
+        <div class="testi-card">
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Tiap hari kena debu jalanan bikin mata gatal terus. Sekali gurah langsung bersih semua kotorannya. Sangat recommended buat yang mobilitas tinggi."</p>
+            <span class="testi-user">- Mas Andi (Ojek Online)</span>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 35px; background: #e8f5e9; padding: 20px; border-radius: 20px;">
+        <p style="font-weight: 700; color: #2c3e50;">SIAP JADI TESTIMONI BERIKUTNYA?</p>
+        <p style="font-size: 0.9rem;">Melayani Panggilan Rumah Area Bandung & Cimahi</p>
+    </div>
+
+    <!-- GANTI NOMOR WHATSAPP DI BAWAH INI -->
+    <a href="https://wa.me/6289646836064?text=Halo%20NusaTerapi,%20saya%20mau%20konsultasi%20mengenai%20keluhan%20mata%20saya" class="btn-wa">
+        <i class="fab fa-whatsapp" style="margin-right: 12px;"></i> HUBUNGI TERAPIS SEKARANG
     </a>
 
     <footer>
         &copy; 2026 NusaTerapi Herbal - Aldi Septiana <br>
-        Terapis Herbal Terpercaya Bandung & Cimahi
+        Ahli Terapi & Pengobatan Tradisional Bersertifikat
     </footer>
 </div>
 
