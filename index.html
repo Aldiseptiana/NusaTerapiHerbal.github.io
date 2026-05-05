@@ -1,142 +1,133 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NUSA TERAPI HERBAL - Solusi Mata Sehat</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-<style>
-
-body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fafafa; }
-.promo-box { background: #f0fdf4; border: 2px dashed #16a34a; }
-.card-keluhan { transition: all 0.3s ease; }
-.card-keluhan:hover { transform: translateY(-5px); border-color: #16a34a; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUSA TERAPI HERBAL - Pandangan Jernih Seketika</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-gradient { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); }
+        .price-slash { text-decoration: line-through; color: #9ca3af; font-size: 1.2rem; }
+        html { scroll-behavior: smooth; }
+    </style>
 </head>
-<body class="text-slate-900">
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-<!-- Header / Navbar -->
-<nav class="sticky top-0 bg-white shadow-sm z-50 py-5 px-6">
-<div class="container mx-auto flex justify-between items-center">
-<div class="text-xl font-extrabold text-green-800 tracking-tighter uppercase">
-NUSA<span class="text-green-500">TERAPI</span>HERBAL
-</div>
-<a href="https://wa.me/6289646836064" class="bg-green-600 text-white px-5 py-2 rounded-xl font-bold text-xs hover:bg-green-700 transition">
-Daftar Sekarang
-</a>
-</div>
+<!-- Header -->
+<nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="text-xl md:text-2xl font-bold text-green-700">NUSA TERAPI <span class="text-green-500">HERBAL</span></div>
+        <a href="https://wa.me/628946836064" class="bg-green-600 text-white px-4 py-2 rounded-full font-semibold text-sm md:text-base hover:bg-green-700 transition">Konsultasi Gratis</a>
+    </div>
 </nav>
 
-<!-- Headline Utama -->
-<header class="py-16 px-6 text-center bg-white">
-<div class="container mx-auto max-w-4xl">
-<h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 text-slate-900">
-Kembalikan Penglihatan <span class="text-green-600">Jernih & Tajam</span> Secara Alami
-</h1>
-<p class="text-lg text-slate-500 mb-10 max-w-2xl mx-auto font-medium">
-Metode Gurah Mata tradisional untuk membantu membersihkan kotoran serta meringankan berbagai keluhan saraf mata tanpa bahan kimia.
-</p>
+<!-- Hero Section -->
+<section class="hero-gradient py-12 px-6">
+    <div class="container mx-auto text-center max-w-4xl">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+            Kembalikan Pandangan Jernih Tanpa Harus Terus Bergantung pada Obat Kimia!
+        </h1>
+        <p class="text-lg text-gray-600 mb-8">
+            Solusi Gurah Mata Alami: Cara Tradisional, Hasil Maksimal untuk Mata Lelah, Minus, dan Silinder.
+        </p>
+        
+        <!-- Promo Box -->
+        <div class="bg-white p-6 rounded-2xl shadow-xl border-2 border-green-500 inline-block mb-8">
+            <p class="text-red-600 font-bold uppercase mb-2">Promo Terbatas Hari Ini!</p>
+            <div class="flex items-center justify-center gap-3">
+                <span class="price-slash">Rp 150.000</span>
+                <span class="text-4xl font-black text-red-600">Rp 50.000</span>
+            </div>
+            <p class="text-sm text-gray-500 mt-2 font-semibold">*Khusus 10 Pendaftar Pertama di Bandung & Cimahi</p>
+        </div>
 
-<!-- PROMO HARGA -->
-<div class="promo-box rounded-3xl p-8 md:p-12 mb-10 shadow-sm inline-block w-full max-w-2xl">
-<p class="text-xs font-bold text-green-700 uppercase tracking-widest mb-3">Penawaran Terbatas Hari Ini</p>
-<div class="flex justify-center items-center gap-6 mb-4">
-<span class="text-2xl text-gray-400 line-through">Rp 150.000</span>
-<span class="text-5xl md:text-7xl font-black text-red-600">Rp 50.000</span>
-</div>
-<p class="text-sm font-semibold text-slate-600 italic">"Harga Promo berlaku khusus untuk 10 pendaftar pertama via WhatsApp!"</p>
-</div>
-
-<!-- CALL TO ACTION UTAMA -->
-<div class="max-w-md mx-auto">
-<a href="https://wa.me/6289646836064" class="flex items-center justify-center gap-3 bg-green-600 text-white py-5 rounded-2xl text-xl font-black shadow-xl shadow-green-200 hover:bg-green-700 transition transform hover:scale-105">
-<i class="fab fa-whatsapp text-2xl"></i> KLAIM PROMO VIA WA
-</a>
-<p class="mt-4 text-[10px] text-gray-400 uppercase font-bold tracking-widest leading-relaxed">
-Klik tombol diatas untuk langsung terhubung dengan Admin NUSA TERAPI HERBAL
-</p>
-</div>
-</div>
-</header>
-
-<!-- Section Penjelasan Keluhan -->
-<section class="py-20 bg-slate-50 px-6 border-t border-gray-100">
-<div class="container mx-auto max-w-5xl">
-<div class="text-center mb-16">
-<h2 class="text-3xl font-bold mb-4">Solusi Untuk Berbagai Keluhan Mata</h2>
-<div class="w-20 h-1 bg-green-600 mx-auto"></div>
-</div>
-
-<div class="grid md:grid-cols-3 gap-8">
-<!-- Mata Minus -->
-<div class="card-keluhan bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
-<div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 mb-6">
-<i class="fas fa-minus-circle text-xl"></i>
-</div>
-<h3 class="text-xl font-bold mb-3">Mata Minus (Miopi)</h3>
-<p class="text-sm text-slate-500 leading-relaxed">
-Membantu merelaksasi otot mata yang tegang akibat radiasi atau kelelahan, membantu menormalkan kembali saraf mata yang kaku.
-</p>
-</div>
-
-<!-- Mata Plus -->
-<div class="card-keluhan bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
-<div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 mb-6">
-<i class="fas fa-plus-circle text-xl"></i>
-</div>
-<h3 class="text-xl font-bold mb-3">Mata Plus (Presbiopi)</h3>
-<p class="text-sm text-slate-500 leading-relaxed">
-Meningkatkan elastisitas lensa mata dan melancarkan sirkulasi darah di area mata agar fokus penglihatan kembali tajam.
-</p>
-</div>
-
-<!-- Silindris -->
-<div class="card-keluhan bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
-<div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 mb-6">
-<i class="fas fa-circle-notch text-xl"></i>
-</div>
-<h3 class="text-xl font-bold mb-3">Mata Silindris</h3>
-<p class="text-sm text-slate-500 leading-relaxed">
-Pembersihan residu polusi pada kornea mata yang seringkali memperparah efek bayangan atau pandangan ganda (silinder).
-</p>
-</div>
-</div>
-</div>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <a href="https://wa.me/628946836064?text=Halo%20Nusa%20Terapi%20Herbal,%20saya%20mau%20ambil%20Promo%20Gurah%20Mata%2050rb" class="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-bold shadow-lg hover:bg-green-700 transition uppercase">Daftar Promo 50rb</a>
+        </div>
+    </div>
 </section>
 
-<!-- Testimoni Simpel -->
-<section class="py-20 bg-white px-6">
-<div class="container mx-auto max-w-4xl text-center">
-<h2 class="text-2xl font-bold mb-10">Kenapa Harus NUSA TERAPI?</h2>
-<div class="grid md:grid-cols-2 gap-8 text-left">
-<div class="flex gap-4 p-6 bg-slate-50 rounded-2xl">
-<i class="fas fa-check-circle text-green-600 mt-1"></i>
-<p class="text-sm font-medium">Kotoran, debu, dan lendir penyebab mata buram langsung ditarik keluar.</p>
-</div>
-<div class="flex gap-4 p-6 bg-slate-50 rounded-2xl">
-<i class="fas fa-check-circle text-green-600 mt-1"></i>
-<p class="text-sm font-medium">Menggunakan 100% bahan herbal pilihan berkualitas.</p>
-</div>
-</div>
-</div>
+<!-- Main Image & Benefit -->
+<section id="manfaat" class="bg-white py-12 px-6">
+    <div class="container mx-auto max-w-5xl">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-green-700 order-2 md:order-1">
+                <img src="watermarked_img_7556795038254869370.png" alt="Proses Gurah Mata" class="w-full h-auto">
+            </div>
+            <div class="order-1 md:order-2">
+                <h2 class="text-2xl font-bold mb-6 text-green-800 uppercase">Mengapa Harus NUSA TERAPI HERBAL?</h2>
+                <ul class="space-y-4 text-md md:text-lg">
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                        <span><strong>100% Herbal Alami:</strong> Aman tanpa efek samping kimia.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                        <span><strong>Detoksifikasi Total:</strong> Mengeluarkan kotoran & lemak mata.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                        <span><strong>Atasi Mata Lelah:</strong> Solusi untuk pengguna HP & Laptop.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                        <span><strong>Layanan Panggilan:</strong> Kami datang ke lokasi Anda (Bandung/Cimahi).</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimony Section -->
+<section class="py-12 bg-gray-50 px-6">
+    <div class="container mx-auto max-w-6xl">
+        <h2 class="text-2xl font-bold text-center mb-10 text-gray-800 uppercase">Apa Kata Mereka?</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-sm italic">
+                <p class="text-gray-600 mb-4">"Awalnya takut perih, tapi cuma sebentar. Begitu buka mata, rasanya kayak baru ganti mata! Terang banget."</p>
+                <p class="font-bold text-green-800">- Rian, Freelancer</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm italic">
+                <p class="text-gray-600 mb-4">"Minus saya tadinya 2.5, setelah rutin terapi turun jadi 1.5. Memang butuh proses, tapi hasilnya nyata!"</p>
+                <p class="font-bold text-green-800">- Budi, Karyawan</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm italic">
+                <p class="text-gray-600 mb-4">"Pandangan jadi plong, kotoran mata keluar semua. Mantap Bro Aldi pelayanannya!"</p>
+                <p class="font-bold text-green-800">- Hendra, Bandung</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm italic">
+                <p class="text-gray-600 mb-4">"Gak nyangka harganya cuma 50rb tapi hasilnya kayak perawatan mahal. Mata jadi seger lagi."</p>
+                <p class="font-bold text-green-800">- Maya, Admin</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm italic">
+                <p class="text-gray-600 mb-4">"Sangat terbantu dengan layanan panggilan. Jadi nggak perlu macet-macetan ke klinik."</p>
+                <p class="font-bold text-green-800">- Siti, Cimahi</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm italic">
+                <p class="text-gray-600 mb-4">"Pusing-pusing karena mata lelah langsung hilang. Rekomen buat yang kerja di depan layar!"</p>
+                <p class="font-bold text-green-800">- Andi, Driver Online</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA -->
+<section class="bg-green-700 py-16 text-center text-white px-6">
+    <div class="container mx-auto max-w-2xl">
+        <h2 class="text-3xl font-bold mb-4 uppercase">Jangan Tunggu Sampai Pandangan Semakin Buram!</h2>
+        <p class="text-green-100 mb-8 text-lg">Konsultasikan keluhan mata Anda sekarang, GRATIS.</p>
+        <a href="https://wa.me/628946836064" class="bg-white text-green-700 px-10 py-4 rounded-full text-xl font-extrabold hover:bg-gray-100 shadow-2xl transition inline-flex items-center gap-3 uppercase">
+            <i class="fab fa-whatsapp"></i> Chat Bro Aldi Sekarang
+        </a>
+    </div>
 </section>
 
 <!-- Footer -->
-<footer class="py-12 bg-slate-900 text-white text-center">
-<div class="container mx-auto px-6">
-<div class="text-2xl font-black italic mb-2 tracking-tighter">NUSA TERAPI HERBAL</div>
-<p class="text-xs text-gray-500 uppercase tracking-widest mb-8 italic">Purity • Wellness • Tradition</p>
-<div class="h-[1px] w-full bg-gray-800 mb-8"></div>
-<p class="text-xs text-gray-600 tracking-widest uppercase">&copy; 2026 NUSA TERAPI HERBAL. All Rights Reserved.</p>
-</div>
+<footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
+    <p>&copy; 2026 NUSA TERAPI HERBAL - Aldi Septiana. <br> Bandung & Cimahi.</p>
 </footer>
-
-<!-- Floating Call to Action -->
-<a href="https://wa.me/6289646836064" class="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition z-[100]">
-<i class="fab fa-whatsapp text-4xl"></i>
-</a>
 
 </body>
 </html>
