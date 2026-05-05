@@ -3,135 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NUSA TERAPI HERBAL - Solusi Mata Sehat</title>
+    <title>NUSA TERAPI HERBAL - Est. 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        .glass-morphism {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+        /* Warna Khusus dari Label Produk Kamu */
+        :root {
+            --hijau-tua: #2d4739;
+            --coklat-krem: #e8dbc5;
+            --aksen-emas: #c5a059;
         }
-        .hero-bg {
-            background: radial-gradient(circle at top right, #dcfce7, #f0fdf4);
-        }
-        .cta-pulse {
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.7); }
-            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(22, 163, 74, 0); }
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); }
-        }
+        body { background-color: var(--coklat-krem); color: var(--hijau-tua); }
+        .bg-hijau-brand { background-color: var(--hijau-tua); }
+        .text-hijau-brand { color: var(--hijau-tua); }
+        .border-brand { border-color: var(--aksen-emas); }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans leading-relaxed">
+<body class="font-serif">
 
-<!-- Header Nav -->
-<nav class="sticky top-0 z-50 glass-morphism shadow-md px-6 py-4">
+<!-- Header -->
+<nav class="bg-hijau-brand shadow-lg px-6 py-5 border-b-4 border-brand">
     <div class="container mx-auto flex justify-between items-center">
-        <div class="text-2xl font-black tracking-tighter text-green-800">
-            NUSA TERAPI <span class="text-green-500">HERBAL</span>
+        <div class="text-2xl font-bold tracking-widest text-white uppercase">
+            NUSA TERAPI <span style="color: var(--aksen-emas);">HERBAL</span>
         </div>
-        <a href="https://wa.me/628946836064" class="hidden md:block bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full font-bold transition-all shadow-lg">
-            Hubungi Kami
-        </a>
+        <a href="https://wa.me/628946836064" class="bg-white text-green-900 px-6 py-2 rounded-full font-bold text-sm shadow-md hover:bg-gray-100">WA BRO ALDI</a>
     </div>
 </nav>
 
 <!-- Hero Section -->
-<section class="hero-bg py-20 px-6">
-    <div class="container mx-auto max-w-5xl text-center">
-        <span class="bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest mb-4 inline-block">
-            Terapi Gurah Mata No. 1 di Bandung & Cimahi
-        </span>
-        <h1 class="text-4xl md:text-6xl font-black text-slate-900 leading-tight mb-6">
-            Kembalikan Pandangan Jernih <br> <span class="text-green-600 underline">Tanpa Obat Kimia!</span>
-        </h1>
-        <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto">
-            Solusi Gurah Mata Alami untuk Mata Lelah, Minus, dan Silinder dengan hasil maksimal secara tradisional.
+<section class="py-16 px-6 text-center">
+    <div class="container mx-auto max-w-4xl">
+        <div class="inline-block border-2 border-brand p-2 mb-6">
+            <h1 class="text-3xl md:text-5xl font-bold leading-tight uppercase px-4 py-2 bg-hijau-brand text-white">
+                Kembalikan Pandangan Jernih <br>Secara Tradisional
+            </h1>
+        </div>
+        <p class="text-lg md:text-xl italic mb-10 text-gray-700">
+            "Hangatnya Menyembuhkan, Alam yang Tenang"
         </p>
-
+        
         <!-- Promo Card -->
-        <div class="bg-white p-8 rounded-3xl shadow-2xl border-4 border-green-500 inline-block mb-12 transform hover:scale-105 transition-transform duration-300">
-            <p class="text-red-500 font-extrabold uppercase text-sm mb-2 tracking-widest">Penawaran Spesial Hari Ini</p>
-            <div class="flex items-center justify-center gap-4 mb-4">
-                <span class="text-2xl text-slate-400 line-through font-bold">Rp 150.000</span>
-                <span class="text-5xl font-black text-red-600">Rp 50.000</span>
+        <div class="bg-white p-8 rounded-lg shadow-2xl border-4 border-brand inline-block mb-10 transform -rotate-1">
+            <p class="text-red-700 font-bold uppercase text-sm mb-2">Penawaran Spesial Hari Ini!</p>
+            <div class="flex items-center justify-center gap-4">
+                <span class="text-gray-400 line-through text-xl">Rp 150.000</span>
+                <span class="text-5xl font-black text-hijau-brand underline">Rp 50.000</span>
             </div>
-            <p class="text-slate-700 font-medium">Hemat 100 Ribu Untuk 10 Orang Pertama!</p>
+            <p class="text-xs mt-3 font-bold uppercase tracking-widest text-gray-500">*Terbatas Area Bandung & Cimahi*</p>
         </div>
 
         <div class="block">
-            <a href="https://wa.me/628946836064?text=Halo%20Nusa%20Terapi%20Herbal,%20saya%20mau%20ambil%20Promo%20Gurah%20Mata%2050rb" 
-               class="cta-pulse bg-green-600 text-white px-12 py-5 rounded-2xl text-xl font-black shadow-2xl hover:bg-green-700 transition-all inline-block uppercase tracking-wide">
-                Daftar Promo Sekarang
+            <a href="https://wa.me/628946836064" class="bg-hijau-brand text-white px-12 py-5 rounded-md text-xl font-bold shadow-xl border-2 border-brand hover:scale-105 transition-all">
+                AMBIL PROMO SEKARANG
             </a>
         </div>
     </div>
 </section>
 
-<!-- KELUHAN SECTION (TIDAK LAGI FLAT) -->
-<section class="py-20 px-6 bg-white">
-    <div class="container mx-auto max-w-6xl">
-        <h2 class="text-3xl md:text-4xl font-black text-center mb-16 text-slate-900 uppercase tracking-tight">
-            Apakah Anda Mengalami Keluhan Ini?
-        </h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="group bg-slate-50 p-8 rounded-3xl border-b-8 border-red-500 hover:bg-white hover:shadow-2xl transition-all duration-300">
-                <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform">
-                    <i class="fas fa-eye-slash text-red-600 text-3xl"></i>
-                </div>
-                <h3 class="font-black text-xl mb-3">Mata Perih & Merah</h3>
-                <p class="text-slate-600">Sering menatap layar HP atau laptop terlalu lama? Hati-hati radiasi!</p>
+<!-- Keluhan Section -->
+<section class="py-16 px-6 bg-white border-y-4 border-brand">
+    <div class="container mx-auto max-w-5xl">
+        <h2 class="text-2xl md:text-4xl font-bold text-center mb-12 uppercase tracking-tighter">Apakah Anda Mengalami Keluhan Ini?</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="p-8 border-2 border-brand rounded-none bg-stone-50 hover:bg-hijau-brand hover:text-white transition-all group">
+                <i class="fas fa-eye-slash text-3xl mb-4 text-green-800 group-hover:text-white"></i>
+                <h3 class="font-bold text-lg">Mata Perih & Merah</h3>
+                <p class="text-sm mt-2 opacity-80">Akibat paparan radiasi gadget setiap hari.</p>
             </div>
-            <div class="group bg-slate-50 p-8 rounded-3xl border-b-8 border-orange-500 hover:bg-white hover:shadow-2xl transition-all duration-300">
-                <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform">
-                    <i class="fas fa-cloud text-orange-600 text-3xl"></i>
-                </div>
-                <h3 class="font-black text-xl mb-3">Pandangan Kabur</h3>
-                <p class="text-slate-600">Merasa mata seperti berpasir atau pandangan mulai tidak fokus?</p>
+            <div class="p-8 border-2 border-brand rounded-none bg-stone-50 hover:bg-hijau-brand hover:text-white transition-all group">
+                <i class="fas fa-cloud text-3xl mb-4 text-green-800 group-hover:text-white"></i>
+                <h3 class="font-bold text-lg">Pandangan Kabur</h3>
+                <p class="text-sm mt-2 opacity-80">Mata terasa berat dan pandangan tidak fokus.</p>
             </div>
-            <div class="group bg-slate-50 p-8 rounded-3xl border-b-8 border-yellow-500 hover:bg-white hover:shadow-2xl transition-all duration-300">
-                <div class="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform">
-                    <i class="fas fa-smog text-yellow-600 text-3xl"></i>
-                </div>
-                <h3 class="font-black text-xl mb-3">Kotoran & Polusi</h3>
-                <p class="text-slate-600">Debu jalanan yang mengendap bisa menyebabkan infeksi dan mata berat.</p>
+            <div class="p-8 border-2 border-brand rounded-none bg-stone-50 hover:bg-hijau-brand hover:text-white transition-all group">
+                <i class="fas fa-smog text-3xl mb-4 text-green-800 group-hover:text-white"></i>
+                <h3 class="font-bold text-lg">Kotoran Mengendap</h3>
+                <p class="text-sm mt-2 opacity-80">Polusi jalanan yang masuk ke balik kelopak mata.</p>
             </div>
-            <div class="group bg-slate-50 p-8 rounded-3xl border-b-8 border-blue-500 hover:bg-white hover:shadow-2xl transition-all duration-300">
-                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform">
-                    <i class="fas fa-glasses text-blue-600 text-3xl"></i>
-                </div>
-                <h3 class="font-black text-xl mb-3">Mata Minus & Silinder</h3>
-                <p class="text-slate-600">Ketergantungan kacamata yang terus bertambah parah setiap tahunnya?</p>
+            <div class="p-8 border-2 border-brand rounded-none bg-stone-50 hover:bg-hijau-brand hover:text-white transition-all group">
+                <i class="fas fa-glasses text-3xl mb-4 text-green-800 group-hover:text-white"></i>
+                <h3 class="font-bold text-lg">Minus & Silinder</h3>
+                <p class="text-sm mt-2 opacity-80">Ketergantungan kacamata yang semakin parah.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Visual Section -->
-<section class="py-20 px-6 bg-slate-900 text-white overflow-hidden">
+<!-- Ilustrasi & Benefit -->
+<section class="py-16 px-6 bg-hijau-brand text-white">
     <div class="container mx-auto max-w-5xl">
-        <div class="grid md:grid-cols-2 gap-16 items-center">
-            <div class="relative">
-                <div class="absolute -top-10 -left-10 w-40 h-40 bg-green-500/20 rounded-full blur-3xl"></div>
-                <img src="watermarked_img_7556795038254869370.png" alt="Proses Terapi" class="rounded-3xl shadow-2xl border-2 border-green-500/30 relative z-10">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="p-10 border-4 border-brand bg-stone-100 rounded-lg text-center">
+                <!-- Pengganti Foto: Ilustrasi Grafis Font Awesome -->
+                <i class="fas fa-spa text-8xl text-green-900 mb-6"></i>
+                <p class="text-green-900 font-bold italic">Terapi Herbal Alami & Higienis</p>
+                <p class="text-gray-600 text-sm mt-2 underline">"Murni Dari Alam Untuk Kesehatan Mata Anda"</p>
             </div>
             <div>
-                <h2 class="text-3xl md:text-4xl font-black mb-8 leading-tight">MENGAPA HARUS DI <br><span class="text-green-500 uppercase">NUSA TERAPI HERBAL?</span></h2>
+                <h2 class="text-3xl font-bold mb-8 uppercase" style="color: var(--coklat-krem);">Mengapa Harus di <br>NUSA TERAPI HERBAL?</h2>
                 <ul class="space-y-6">
-                    <li class="flex gap-4">
-                        <div class="mt-1 bg-green-500 rounded-full p-1"><i class="fas fa-check text-white text-xs"></i></div>
-                        <div><strong class="text-green-400 block text-lg">100% Bahan Alami</strong> Tanpa campuran kimia berbahaya, aman untuk segala usia.</div>
+                    <li class="flex items-start gap-4">
+                        <i class="fas fa-leaf text-2xl" style="color: var(--aksen-emas);"></i>
+                        <span><strong>100% Bahan Alami:</strong> Racikan herbal rahasia tanpa bahan kimia berbahaya.</span>
                     </li>
-                    <li class="flex gap-4">
-                        <div class="mt-1 bg-green-500 rounded-full p-1"><i class="fas fa-check text-white text-xs"></i></div>
-                        <div><strong class="text-green-400 block text-lg">Detoksifikasi Instan</strong> Mengeluarkan kotoran & lemak mata yang menyumbat.</div>
+                    <li class="flex items-start gap-4">
+                        <i class="fas fa-hand-holding-heart text-2xl" style="color: var(--aksen-emas);"></i>
+                        <span><strong>Detoksifikasi Total:</strong> Membersihkan secara tuntas kotoran & lemak mata.</span>
                     </li>
-                    <li class="flex gap-4">
-                        <div class="mt-1 bg-green-500 rounded-full p-1"><i class="fas fa-check text-white text-xs"></i></div>
-                        <div><strong class="text-green-400 block text-lg">Layanan Home Care</strong> Khusus area Bandung & Cimahi, kami datang ke rumah Anda!</div>
+                    <li class="flex items-start gap-4">
+                        <i class="fas fa-car text-2xl" style="color: var(--aksen-emas);"></i>
+                        <span><strong>Layanan Home Care:</strong> Spesialis panggilan area Bandung & Cimahi.</span>
                     </li>
                 </ul>
             </div>
@@ -139,41 +121,16 @@
     </div>
 </section>
 
-<!-- Testimony Section (Grid Layout Baru) -->
-<section class="py-20 px-6 bg-white">
-    <div class="container mx-auto max-w-6xl">
-        <h2 class="text-3xl md:text-4xl font-black text-center mb-16 text-slate-900">APA KATA MEREKA?</h2>
-        <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-            <div class="break-inside-avoid bg-slate-50 p-8 rounded-3xl border border-slate-200">
-                <p class="text-slate-600 italic mb-4">"Awalnya takut perih, tapi cuma sebentar. Begitu buka mata, rasanya kayak baru ganti mata! Terang banget."</p>
-                <p class="font-black text-green-700">- Rian, Freelancer</p>
-            </div>
-            <div class="break-inside-avoid bg-green-50 p-8 rounded-3xl border border-green-100">
-                <p class="text-slate-600 italic mb-4">"Minus saya tadinya 2.5, setelah rutin terapi turun jadi 1.5. Memang butuh proses, tapi hasilnya nyata!"</p>
-                <p class="font-black text-green-700">- Budi, Karyawan</p>
-            </div>
-            <div class="break-inside-avoid bg-slate-50 p-8 rounded-3xl border border-slate-200">
-                <p class="text-slate-600 italic mb-4">"Pandangan jadi plong, kotoran mata keluar semua. Mantap Bro Aldi pelayanannya!"</p>
-                <p class="font-black text-green-700">- Hendra, Bandung</p>
-            </div>
-            <div class="break-inside-avoid bg-green-50 p-8 rounded-3xl border border-green-100">
-                <p class="text-slate-600 italic mb-4">"Sangat terbantu dengan layanan panggilan. Jadi nggak perlu macet-macetan ke klinik."</p>
-                <p class="font-black text-green-700">- Siti, Cimahi</p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Footer CTA -->
-<footer class="bg-green-800 py-20 px-6 text-center text-white">
+<footer class="bg-stone-100 py-16 px-6 text-center border-t-8 border-brand">
     <div class="container mx-auto max-w-3xl">
-        <h2 class="text-4xl font-black mb-6 uppercase">JANGAN TUNGGU SAMPAI BURAM!</h2>
-        <p class="text-green-100 text-xl mb-10">Konsultasikan keluhan mata Anda sekarang bersama Bro Aldi, GRATIS.</p>
-        <a href="https://wa.me/628946836064" class="bg-white text-green-800 px-12 py-5 rounded-full text-2xl font-black shadow-2xl hover:bg-slate-100 transition-all inline-flex items-center gap-4">
-            <i class="fab fa-whatsapp text-3xl"></i> HUBUNGI BRO ALDI
+        <h2 class="text-3xl font-bold mb-6 text-green-900">JANGAN TUNGGU SAMPAI PANDANGAN BURAM!</h2>
+        <a href="https://wa.me/628946836064" class="bg-hijau-brand text-white px-12 py-5 rounded-none text-xl font-bold shadow-2xl hover:bg-black transition-all inline-block uppercase tracking-widest border-2 border-brand">
+            CHAT ADMIN SEKARANG
         </a>
-        <div class="mt-16 text-green-200 text-sm">
-            &copy; 2026 NUSA TERAPI HERBAL - Aldi Septiana. <br> Bandung & Cimahi.
+        <div class="mt-16 text-gray-500 text-xs">
+            &copy; 2026 NUSA TERAPI HERBAL - ALDI SEPTIANA. <br>
+            "Solusi Terapi Mata Terbaik "
         </div>
     </div>
 </footer>
