@@ -4,9 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nusa Terapi Herbal - Solusi Mata Sehat Alami</title>
-<!-- Google Fonts: Poppins -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<!-- Lucide Icons -->
 <script src="https://unpkg.com/lucide@latest"></script>
 <style>
 :root {
@@ -99,10 +97,6 @@ object-fit: cover;
 }
 
 /* Problem Section */
-.problem {
-background-color: var(--white);
-}
-
 .card-grid {
 display: grid;
 grid-template-columns: 1fr;
@@ -149,12 +143,11 @@ color: var(--primary-color);
 font-weight: bold;
 }
 
-/* Testimonials */
+/* Testimonials - Diperbanyak */
 .testimonial-grid {
 display: grid;
 grid-template-columns: 1fr;
 gap: 20px;
-overflow-x: auto;
 padding: 10px 5px;
 }
 
@@ -163,6 +156,7 @@ background: white;
 padding: 20px;
 border-radius: 15px;
 box-shadow: var(--shadow);
+border: 1px solid #e2e8f0;
 }
 
 .testi-profile {
@@ -229,11 +223,10 @@ background-color: #25d366;
 box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* Desktop Adjustments */
 @media (min-width: 768px) {
 .hero h1 { font-size: 3.5rem; }
 .card-grid { grid-template-columns: repeat(3, 1fr); }
-.testimonial-grid { grid-template-columns: repeat(3, 1fr); }
+.testimonial-grid { grid-template-columns: repeat(2, 1fr); }
 .hero-flex {
 display: flex;
 align-items: center;
@@ -243,11 +236,14 @@ gap: 40px;
 .hero-content { flex: 1; }
 .hero-img-container { flex: 1; }
 }
+
+@media (min-width: 1024px) {
+.testimonial-grid { grid-template-columns: repeat(3, 1fr); }
+}
 </style>
 </head>
 <body>
 
-<!-- Hero Section -->
 <header class="hero">
 <div class="container">
 <div class="hero-flex">
@@ -257,14 +253,12 @@ gap: 40px;
 <a href="https://wa.me/6289646836064" class="btn">Chat WhatsApp Sekarang</a>
 </div>
 <div class="hero-img-container">
-<!-- LINK GAMBAR DIPERBAIKI: Foto Alam/Daun yang Menenangkan -->
-<img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=800" alt="Terapi Mata Herbal" class="hero-img">
+<img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=800" alt="Relaksasi Terapi Mata" class="hero-img">
 </div>
 </div>
 </div>
 </header>
 
-<!-- Problem Section -->
 <section class="problem">
 <div class="container">
 <h2 class="text-center">Apakah Anda Merasakan Ini?</h2>
@@ -291,7 +285,6 @@ gap: 40px;
 </div>
 </section>
 
-<!-- Edukasi Section -->
 <section class="edu-section">
 <div class="container">
 <div class="text-center">
@@ -316,22 +309,6 @@ gap: 40px;
 </div>
 </section>
 
-<!-- Keunggulan Section -->
-<section>
-<div class="container">
-<h2 class="text-center">Mengapa Memilih Nusa Terapi?</h2>
-<div style="max-width: 600px; margin: 30px auto;">
-<ul class="check-list">
-<li><span class="check-icon">✔</span> Terapis berpengalaman di bidang herbal</li>
-<li><span class="check-icon">✔</span> Peralatan dan proses dijamin higienis</li>
-<li><span class="check-icon">✔</span> Menggunakan bahan pilihan asli alam</li>
-<li><span class="check-icon">✔</span> Ribuan pelanggan telah merasakan manfaatnya</li>
-</ul>
-</div>
-</div>
-</section>
-
-<!-- Testimonials -->
 <section style="background-color: #fafafa;">
 <div class="container">
 <h2 class="text-center">Apa Kata Mereka?</h2>
@@ -357,11 +334,31 @@ gap: 40px;
 </div>
 <p>“Mata merah karena polusi motor langsung hilang. Langganan di sini pokoknya.”</p>
 </div>
+<div class="testi-card">
+<div class="testi-profile">
+<div class="avatar">R</div>
+<div><strong>Rian, Bandung</strong></div>
+</div>
+<p>“Buat yang sering di depan laptop wajib coba. Pandangan jadi tajam lagi.”</p>
+</div>
+<div class="testi-card">
+<div class="testi-profile">
+<div class="avatar">D</div>
+<div><strong>Dewi, Cimahi</strong></div>
+</div>
+<p>“Pelayanannya ramah, tempatnya bersih. Hasilnya langsung kerasa sekali terapi.”</p>
+</div>
+<div class="testi-card">
+<div class="testi-profile">
+<div class="avatar">H</div>
+<div><strong>Hendra, Bandung</strong></div>
+</div>
+<p>“Pusing karena mata lelah langsung hilang. Sangat direkomendasikan!”</p>
+</div>
 </div>
 </div>
 </section>
 
-<!-- Promo Section -->
 <section class="container">
 <div class="promo-box">
 <span class="urgency">Promo Terbatas Hari Ini!</span>
@@ -370,21 +367,4 @@ gap: 40px;
 <span class="price-new">Rp50.000</span>
 <a href="https://wa.me/6289646836064" class="btn" style="background-color: white; color: var(--primary-color);">Booking Sekarang via WhatsApp</a>
 </div>
-</section>
-
-<!-- Footer -->
-<footer style="text-align: center; padding: 40px 0 100px; color: var(--text-light); font-size: 0.9rem;">
-<p>&copy; 2026 Nusa Terapi Herbal - Aldi Septiana. All rights reserved.</p>
-</footer>
-
-<!-- Sticky Button Mobile -->
-<a href="https://wa.me/6289646836064" class="btn sticky-btn">
-💬 Konsultasi Gratis Sekarang
-</a>
-
-<script>
-// Initialize Lucide icons
-lucide.createIcons();
-</script>
-</body>
-</html>
+</
