@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+}
+
+.hero-img {
+width: 100%;<!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -79,6 +82,7 @@ font-weight: 600;
 transition: all 0.3s ease;
 box-shadow: 0 4px 15px rgba(13, 148, 136, 0.3);
 text-align: center;
+margin-bottom: 25px; /* DITAMBAHKAN JARAK DI SINI */
 }
 
 .btn:hover {
@@ -108,6 +112,260 @@ margin-bottom: 30px;
 
 .hero-img {
 width: 100%;
+max-width: 500px;
+border-radius: 20px;
+margin-bottom: 30px;
+box-shadow: var(--shadow);
+object-fit: cover;
+}
+
+/* Card Grid */
+.card-grid {
+display: grid;
+grid-template-columns: 1fr;
+gap: 20px;
+margin-top: 30px;
+}
+
+.card {
+background: var(--white);
+padding: 24px;
+border-radius: 16px;
+box-shadow: var(--shadow);
+border: 1px solid #f1f5f9;
+}
+
+.problem-item {
+display: flex;
+align-items: flex-start;
+gap: 15px;
+margin-bottom: 15px;
+}
+
+/* Testimonials */
+.testimonial-grid {
+display: grid;
+grid-template-columns: 1fr;
+gap: 20px;
+padding: 10px 5px;
+}
+
+.testi-card {
+background: white;
+padding: 20px;
+border-radius: 15px;
+box-shadow: var(--shadow);
+border: 1px solid #e2e8f0;
+}
+
+.testi-profile {
+display: flex;
+align-items: center;
+gap: 12px;
+margin-bottom: 12px;
+}
+
+.avatar {
+width: 50px;
+height: 50px;
+background: #e2e8f0;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+color: var(--primary-color);
+}
+
+/* Promo Section */
+.promo-box {
+background: var(--primary-color);
+color: white;
+padding: 40px 20px;
+border-radius: 24px;
+text-align: center;
+margin: 40px 0;
+}
+
+.price-old {
+text-decoration: line-through;
+opacity: 0.8;
+font-size: 1.2rem;
+}
+
+.price-new {
+font-size: 3rem;
+font-weight: 700;
+display: block;
+margin: 10px 0;
+}
+
+.urgency {
+background: rgba(255, 255, 255, 0.2);
+display: inline-block;
+padding: 4px 15px;
+border-radius: 20px;
+font-size: 0.9rem;
+margin-bottom: 20px;
+}
+
+/* Sticky Button dengan Animasi Gerak */
+.sticky-btn {
+position: fixed;
+bottom: 20px;
+left: 50%;
+transform: translateX(-50%);
+width: 90%;
+max-width: 400px;
+z-index: 1000;
+background-color: #25d366;
+box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+animation: pulse-sticky 1.5s infinite ease-in-out;
+margin-bottom: 0 !important; /* Agar tombol bawah tidak ikut berjarak */
+}
+
+@media (min-width: 768px) {
+.hero h1 { font-size: 3.5rem; }
+.card-grid { grid-template-columns: repeat(3, 1fr); }
+.testimonial-grid { grid-template-columns: repeat(2, 1fr); }
+.hero-flex {
+display: flex;
+align-items: center;
+text-align: left;
+gap: 40px;
+}
+.hero-content { flex: 1; }
+.hero-img-container { flex: 1; }
+}
+
+@media (min-width: 1024px) {
+.testimonial-grid { grid-template-columns: repeat(3, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<header class="hero">
+<div class="container">
+<div class="hero-flex">
+<div class="hero-content">
+<h1>Mata Buram, Perih, dan Sering Lelah?</h1>
+<p>Atasi dengan <strong>Terapi Gurah Mata Herbal Alami</strong>. Kembalikan kesegaran pandangan Anda tanpa bahan kimia berbahaya.</p>
+<a href="https://wa.me/6289646836064?text=Halo%20Kang%20Aldi%2C%20saya%20mau%20booking%20Terapi%20Gurah%20Mata%20promo%2050rb.%20Jadwal%20yang%20kosong%20kapan%20ya%3F" class="btn">Chat WhatsApp Sekarang</a>
+</div>
+<div class="hero-img-container">
+<img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=800" alt="Relaksasi Terapi Mata" class="hero-img">
+</div>
+</div>
+</div>
+</header>
+
+<!-- Problem Section -->
+<section class="problem">
+<div class="container">
+<h2 class="text-center">Apakah Anda Merasakan Ini?</h2>
+<div class="card-grid">
+<div class="card">
+<div class="problem-item">
+<span>📱</span>
+<p>Mata terasa sangat lelah dan tegang setelah seharian menatap gadget atau laptop.</p>
+</div>
+</div>
+<div class="card">
+<div class="problem-item">
+<span>🔥</span>
+<p>Mata sering merah, gatal, berair, atau terasa mengganjal (seperti ada pasir).</p>
+</div>
+</div>
+<div class="card">
+<div class="problem-item">
+<span>🌫️</span>
+<p>Penglihatan mulai kabur atau buram secara perlahan dan sulit fokus.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Testimonials Section -->
+<section style="background-color: #fafafa;">
+<div class="container">
+<h2 class="text-center">Apa Kata Mereka?</h2>
+<div class="testimonial-grid" style="margin-top: 30px;">
+<div class="testi-card">
+<div class="testi-profile">
+<div class="avatar">A</div>
+<div><strong>Andi, Bandung</strong></div>
+</div>
+<p>“Mata jadi lebih jernih setelah terapi. Pekerjaan kantor jadi lebih nyaman.”</p>
+</div>
+<div class="testi-card">
+<div class="testi-profile">
+<div class="avatar">S</div>
+<div><strong>Siti, Bandung</strong></div>
+</div>
+<p>“Awalnya perih sebentar, tapi setelah kotoran keluar, mata rasanya enteng banget!”</p>
+</div>
+<div class="testi-card">
+<div class="testi-profile">
+<div class="avatar">B</div>
+<div><strong>Budi, Cimahi</strong></div>
+</div>
+<p>“Mata merah karena polusi motor langsung hilang. Langganan di sini pokoknya.”</p>
+</div>
+<div class="testi-card">
+<div class="testi-profile">
+<div class="avatar">R</div>
+<div><strong>Rian, Bandung</strong></div>
+</div>
+<p>“Buat yang sering di depan laptop wajib coba. Pandangan jadi tajam lagi.”</p>
+</div>
+<div class="testi-card">
+<div class="testi-profile">
+<div class="avatar">D</div>
+<div><strong>Dewi, Cimahi</strong></div>
+</div>
+<p>“Pelayanannya ramah, tempatnya bersih. Hasilnya langsung kerasa sekali terapi.”</p>
+</div>
+<div class="testi-card">
+<div class="testi-profile">
+<div class="avatar">H</div>
+<div><strong>Hendra, Bandung</strong></div>
+</div>
+<p>“Pusing karena mata lelah langsung hilang. Sangat direkomendasikan!”</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Promo Section -->
+<section class="container">
+<div class="promo-box">
+<span class="urgency">Promo Terbatas Hari Ini!</span>
+<p>Ambil kesempatan untuk mata sehat sekarang</p>
+<span class="price-old">Rp150.000</span>
+<span class="price-new">Rp50.000</span>
+<!-- Tombol Promo Bergerak -->
+<a href="https://wa.me/6289646836064?text=Halo%20Kang%20Aldi%2C%20saya%20mau%20booking%20Terapi%20Gurah%20Mata%20promo%2050rb.%20Jadwal%20yang%20kosong%20kapan%20ya%3F" class="btn btn-animate" style="background-color: white; color: var(--primary-color);">Booking Sekarang via WhatsApp</a>
+</div>
+</section>
+
+<!-- Footer -->
+<footer style="text-align: center; padding: 40px 0 100px; color: var(--text-light); font-size: 0.9rem;">
+<p>&copy; 2026 Nusa Terapi Herbal - Aldi Septiana. All rights reserved.</p>
+</footer>
+
+<!-- Sticky Button Mobile dengan Animasi -->
+<a href="https://wa.me/6289646836064?text=Halo%20Kang%20Aldi%2C%20saya%20mau%20booking%20Terapi%20Gurah%20Mata%20promo%2050rb.%20Jadwal%20yang%20kosong%20kapan%20ya%3F" class="btn sticky-btn">
+💬 Konsultasi Gratis Sekarang
+</a>
+
+<script>
+lucide.createIcons();
+</script>
+</body>
+</html>
 max-width: 500px;
 border-radius: 20px;
 margin-bottom: 30px;
