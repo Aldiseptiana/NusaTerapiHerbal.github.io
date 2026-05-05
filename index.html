@@ -10,12 +10,11 @@
 <script src="https://unpkg.com/lucide@latest"></script>
 <style>
 :root {
-/* Warna disesuaikan dengan Branding NusaTerapi Herbal Oil */
---primary-color: #2d4739; /* Hijau Tua Forest */
---primary-dark: #1b2e25;
---secondary-color: #e8dbc5; /* Coklat Krem Earthy */
---text-dark: #2d4739;
---text-light: #4a5568;
+--primary-color: #0d9488; /* Teal 600 */
+--primary-dark: #0f766e; /* Teal 700 */
+--secondary-color: #f0fdfa; /* Teal 50 */
+--text-dark: #1f2937;
+--text-light: #6b7280;
 --white: #ffffff;
 --accent-red: #ef4444;
 --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
@@ -61,7 +60,7 @@ border-radius: 50px;
 text-decoration: none;
 font-weight: 600;
 transition: all 0.3s ease;
-box-shadow: 0 4px 15px rgba(45, 71, 57, 0.3);
+box-shadow: 0 4px 15px rgba(13, 148, 136, 0.3);
 text-align: center;
 }
 
@@ -76,7 +75,6 @@ background: linear-gradient(135deg, var(--secondary-color) 0%, #ffffff 100%);
 padding-top: 80px;
 padding-bottom: 40px;
 text-align: center;
-border-bottom: 4px solid var(--primary-color);
 }
 
 .hero h1 {
@@ -97,7 +95,7 @@ max-width: 500px;
 border-radius: 20px;
 margin-bottom: 30px;
 box-shadow: var(--shadow);
-border: 4px solid var(--primary-color);
+object-fit: cover;
 }
 
 /* Problem Section */
@@ -177,7 +175,7 @@ margin-bottom: 12px;
 .avatar {
 width: 50px;
 height: 50px;
-background: var(--secondary-color);
+background: #e2e8f0;
 border-radius: 50%;
 display: flex;
 align-items: center;
@@ -194,7 +192,6 @@ padding: 40px 20px;
 border-radius: 24px;
 text-align: center;
 margin: 40px 0;
-border: 2px solid var(--secondary-color);
 }
 
 .price-old {
@@ -256,12 +253,12 @@ gap: 40px;
 <div class="hero-flex">
 <div class="hero-content">
 <h1>Mata Buram, Perih, dan Sering Lelah?</h1>
-<p>Atasi dengan <strong>Terapi Gurah Mata Herbal Alami</strong>. Kembalikan kesegaran pandangan Anda secara tradisional & aman.</p>
+<p>Atasi dengan <strong>Terapi Gurah Mata Herbal Alami</strong>. Kembalikan kesegaran pandangan Anda tanpa bahan kimia berbahaya.</p>
 <a href="https://wa.me/6289646836064" class="btn">Chat WhatsApp Sekarang</a>
 </div>
 <div class="hero-img-container">
-<!-- Gambar Suasana Terapi yang Tenang (Bukan Otak) -->
-<img src="https://images.unsplash.com/photo-1544161515-4af6b1d8b159?q=80&w=800" alt="Terapi Mata Herbal" class="hero-img">
+<!-- LINK GAMBAR DIPERBAIKI: Foto Alam/Daun yang Menenangkan -->
+<img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=800" alt="Terapi Mata Herbal" class="hero-img">
 </div>
 </div>
 </div>
@@ -299,7 +296,7 @@ gap: 40px;
 <div class="container">
 <div class="text-center">
 <h2>Apa itu Gurah Mata?</h2>
-<p style="margin-top: 15px; color: var(--text-light);">Gurah mata adalah teknik terapi pembersihan mata menggunakan ekstrak tumbuhan herbal alami. Cairan herbal ini membantu memicu keluarnya kotoran dan lendir melalui air mata secara alami.</p>
+<p style="margin-top: 15px; color: var(--text-light);">Gurah mata adalah teknik terapi pembersihan mata menggunakan ekstrak tumbuhan herbal alami. Cairan herbal ini membantu memicu keluarnya kotoran dan lendir melalui air mata.</p>
 </div>
 
 <div class="card-grid" style="margin-top: 40px;">
@@ -313,7 +310,7 @@ gap: 40px;
 </div>
 <div class="card">
 <h3>✔ Alami</h3>
-<p>Tanpa efek samping jangka panjang karena menggunakan 100% bahan herbal pilihan.</p>
+<p>Tanpa efek samping jangka panjang karena menggunakan 100% bahan herbal.</p>
 </div>
 </div>
 </div>
@@ -325,7 +322,7 @@ gap: 40px;
 <h2 class="text-center">Mengapa Memilih Nusa Terapi?</h2>
 <div style="max-width: 600px; margin: 30px auto;">
 <ul class="check-list">
-<li><span class="check-icon">✔</span> Terapis berpengalaman di Bandung & Cimahi</li>
+<li><span class="check-icon">✔</span> Terapis berpengalaman di bidang herbal</li>
 <li><span class="check-icon">✔</span> Peralatan dan proses dijamin higienis</li>
 <li><span class="check-icon">✔</span> Menggunakan bahan pilihan asli alam</li>
 <li><span class="check-icon">✔</span> Ribuan pelanggan telah merasakan manfaatnya</li>
@@ -337,26 +334,26 @@ gap: 40px;
 <!-- Testimonials -->
 <section style="background-color: #fafafa;">
 <div class="container">
-<h2 class="text-center">Apa Kata Pasien Kami?</h2>
+<h2 class="text-center">Apa Kata Mereka?</h2>
 <div class="testimonial-grid" style="margin-top: 30px;">
 <div class="testi-card">
 <div class="testi-profile">
-<div class="avatar">H</div>
-<div><strong>Hendra, Bandung</strong></div>
+<div class="avatar">A</div>
+<div><strong>Andi, Bandung</strong></div>
 </div>
 <p>“Mata jadi lebih jernih setelah terapi. Pekerjaan kantor jadi lebih nyaman.”</p>
 </div>
 <div class="testi-card">
 <div class="testi-profile">
-<div class="avatar">B</div>
-<div><strong>Budi, Cimahi</strong></div>
+<div class="avatar">S</div>
+<div><strong>Siti, Bandung</strong></div>
 </div>
 <p>“Awalnya perih sebentar, tapi setelah kotoran keluar, mata rasanya enteng banget!”</p>
 </div>
 <div class="testi-card">
 <div class="testi-profile">
-<div class="avatar">S</div>
-<div><strong>Siti, Bandung</strong></div>
+<div class="avatar">B</div>
+<div><strong>Budi, Cimahi</strong></div>
 </div>
 <p>“Mata merah karena polusi motor langsung hilang. Langganan di sini pokoknya.”</p>
 </div>
@@ -368,10 +365,10 @@ gap: 40px;
 <section class="container">
 <div class="promo-box">
 <span class="urgency">Promo Terbatas Hari Ini!</span>
-<p>Dapatkan Pandangan Jernih Sekarang</p>
+<p>Ambil kesempatan untuk mata sehat sekarang</p>
 <span class="price-old">Rp150.000</span>
 <span class="price-new">Rp50.000</span>
-<a href="https://wa.me/6289646836064" class="btn" style="background-color: white; color: var(--primary-color);">Booking Sekarang (Bandung & Cimahi)</a>
+<a href="https://wa.me/6289646836064" class="btn" style="background-color: white; color: var(--primary-color);">Booking Sekarang via WhatsApp</a>
 </div>
 </section>
 
@@ -382,7 +379,7 @@ gap: 40px;
 
 <!-- Sticky Button Mobile -->
 <a href="https://wa.me/6289646836064" class="btn sticky-btn">
-💬 Chat Bro Aldi Sekarang
+💬 Konsultasi Gratis Sekarang
 </a>
 
 <script>
