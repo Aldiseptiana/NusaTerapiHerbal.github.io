@@ -79,7 +79,7 @@ font-weight: 600;
 transition: all 0.3s ease;
 box-shadow: 0 4px 15px rgba(13, 148, 136, 0.3);
 text-align: center;
-margin-bottom: 25px; /* DITAMBAHKAN JARAK DI SINI */
+margin-bottom: 25px;
 }
 
 .btn:hover {
@@ -137,6 +137,22 @@ display: flex;
 align-items: flex-start;
 gap: 15px;
 margin-bottom: 15px;
+}
+
+/* CTA Section Tambahan */
+.cta-middle {
+background-color: var(--secondary-color);
+padding: 40px 0;
+}
+
+.cta-card {
+max-width: 800px;
+margin: 0 auto;
+background: white;
+padding: 30px;
+border-radius: 20px;
+box-shadow: var(--shadow);
+border-left: 5px solid var(--primary-color);
 }
 
 /* Testimonials */
@@ -206,7 +222,7 @@ font-size: 0.9rem;
 margin-bottom: 20px;
 }
 
-/* Sticky Button dengan Animasi Gerak */
+/* Sticky Button */
 .sticky-btn {
 position: fixed;
 bottom: 20px;
@@ -218,7 +234,7 @@ z-index: 1000;
 background-color: #25d366;
 box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 animation: pulse-sticky 1.5s infinite ease-in-out;
-margin-bottom: 0 !important; /* Agar tombol bawah tidak ikut berjarak */
+margin-bottom: 0 !important;
 }
 
 @media (min-width: 768px) {
@@ -281,6 +297,21 @@ gap: 40px;
 <p>Penglihatan mulai kabur atau buram secara perlahan dan sulit fokus.</p>
 </div>
 </div>
+</div>
+</div>
+</section>
+
+<!-- AJAKAN GURAH MATA (BAGIAN BARU) -->
+<section class="cta-middle">
+<div class="container text-center">
+<div class="cta-card">
+<h2 style="color: var(--primary-dark); margin-bottom: 15px;">Waktunya Anda Gurah Mata!</h2>
+<p style="font-size: 1.1rem; color: var(--text-dark); margin-bottom: 15px;">
+Jika permasalahan Anda seperti yang disebutkan di atas, itu tandanya mata Anda butuh <strong>detoksifikasi segera</strong>. Polusi, debu, dan radiasi layar yang menumpuk setiap hari adalah penyebab utama pandangan jadi buram dan perih.
+</p>
+<p style="font-size: 1.1rem; color: var(--primary-dark); font-weight: 600;">
+Gurah Mata membantu mengeluarkan kotoran secara alami dan mengembalikan kesegaran mata Anda hanya dalam satu kali sesi!
+</p>
 </div>
 </div>
 </section>
